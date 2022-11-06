@@ -8,8 +8,7 @@ namespace BasicFundamentalProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Find Quoteint and Reminder" + "\n" + "6. Swapping Two Numbers" + "\n" + "7. Find Even or Odd Number" + "\n" + "8. Exit");
-                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Find Quoteint and Reminder" + "\n" + "6. Swapping Two Numbers" + "\n" + "7. Find Even or Odd Number" + "\n" + "8.Find Alphabets - Vowel Consonant" + "\n" + "9. Exit");
+                Console.WriteLine("1. FlipCoin" + "\n" + "2. Leap Year " + "\n" + "3. Power Of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Find Quoteint and Reminder" + "\n" + "6. Swapping Two Numbers" + "\n" + "7. Find Even or Odd Number" + "\n" + "8. Find Alphabets - Vowel Consonant" + "\n" + "9. Largest Among Three Numbers" + "\n" + "10. Exit");
                 Console.WriteLine("Enter The Above Mention Option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -47,6 +46,10 @@ namespace BasicFundamentalProblems
                         vow.Vowels();
                         break;
                     case 9:
+                        LargestAmong3Numbers lar = new LargestAmong3Numbers();
+                        lar.Largest();
+                        break;
+                    case 10:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
